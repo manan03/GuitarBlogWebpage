@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title> Project1 </title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
+
+<style>
+    /* CSS reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/guitar.jpg');
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .left {
+        position: absolute;
+        left: 93px;
+        top: 20px;
+        /* border: 2px solid rgb(0, 0, 0); */
+        width: 120px;
+        height: 64px;
+        line-height: 22px;
+        display: inline-block;
+    }
+
+    .left img {
+        width: 63px;
+        position: absolute;
+
+    }
+
+    .left p {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 21PX;
+        padding: 10px;
+        position: absolute;
+        top: -13px;
+        left: 47px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        /* border: 2px solid rgb(0, 0, 0); */
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 56px;
+        top: 22px;
+
+        padding: 10px 12px;
+        display: inline-block;
+        /* border: 2px solid rgb(0, 0, 0); */
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: white;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: brown;
+        text-decoration: underline;
+        background-color: rgb(255, 231, 95);
+        text-decoration: none;
+        padding: 16px 23px;
+        border-radius: 10PX;
+    }
+
+    .btn {
+        font-family: 'Oswald', sans-serif;
+        padding: 4px;
+        margin: 0px 6px;
+        background-color: transparent;
+        border: 2px solid brown;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: red;
+    }
+
+    header {
+        background-color: white;
+        /* padding: 5px 5px; */
+        position: absolute;
+        top: -4px;
+        right: -24px;
+        left: 1px;
+    }
+
+    .container {
+        position: relative;
+        top: 190px;
+        /* border: 2px solid red; */
+        margin: 18px 526px;
+        padding: 3px 128px;
+        left: 545px;
+        /* background-color:     rgb(255, 231, 95); */
+    }
+    .Submitbtn{
+        font-family: 'Oswald', sans-serif;
+        padding: 4px;
+        margin: 0px 60px;
+        background-color: transparent;
+        border: 2px solid brown;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color:  rgb(255, 231, 95);
+    }
+    .Submitbtn:hover {
+        background-color: red;
+    }
+    .formgrp input{
+        text-align-last: center;
+         
+        display: block;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 2px 2px;
+        margin: 2px 2px;
+    }
+    .container h2{
+         position: inherit;
+         left: 30px;
+    }
+    .container h1{
+        position: inherit;
+        left: -10px;
+    }
+    .blog{
+        margin: -113px 131px;
+        padding: 256px 260px;
+        border: 2px solid black;
+        position: absolute;
+       
+    }
+    .blog h1{
+        display: block;
+        /* color: rgb(255, 231, 95); */
+        margin-top: -227px; 
+        font-family: font-family: 'Lobster', cursive;
+        
+    }
+    .blog img{
+        width: 285px;
+        position: absolute;
+        left: 26px;
+        top: 119px;
+        height: 271px;
+    }
+    .para{
+        border: 2px solid black;
+        margin: 6px -1px;
+        width: 298px;
+        position: absolute;
+        left: 42px;
+        top: 102px;
+        padding: 5px 35px;
+    }
+    .para2{
+        border: 2px solid black;
+        padding: 17px 11px;
+        margin: 13px 12px ;
+        position: absolute;
+        width: 231px;
+        left: 438px;
+        top: 93px;
+    }
+    .para2 h3{
+        text-align: center;
+    }
+    #a1{
+        color: rgba(153, 151, 49, 0.767);
+    }
+    #a2{
+        color:  rgba(153, 151, 49, 0.767);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <p class="logoname"> Guitar Zero2Hero</p>
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for search -->
+        <div class="right">
+            <button class="btn">PREMIUM</button>
+            <button class="btn">ARTISTS</button>
+        </div>
+    </header>
+    <div class="container">
+         <h1>Welcome Rockstar</h1>
+         <h2>Login/Sign-Up</h2>
+         <form action="no">
+             <div class="formgrp">
+                 <input type="text" name="" placeholder="E-mail address" >
+             </div>
+             <div class="formgrp">
+                <input type="text" name="" placeholder="Password" >
+            </div>
+            <br>
+             <button class="Submitbtn">Submit</button>
+         </form>
+    </div>
+    <div class="blog">
+        <h1> Welcome to my blog!</h1>
+        <!-- <img src="img/my.jpg" alt=""> -->
+        <div class="para">
+            <p> Heyy ! Myself <b>Manan Parihar</b> , and i'm here to share you my guitar playing journey. So i bought this instrument in class 8th, and i started learning guitar by my own.  Journey began by reading blogs , watching a tons of tutorials and spending most of the time in practicing.  The process was fun but painfull too. A year passed and now i was able to play most of the basic songs in leads and chords. One day i watched Amin Toofani playing on youtube , from that day i started practicing 'gratitude'. Flamenco always had a great influence on my guitar playing. It's been 6 years now and i'm still learning by my own. This is how i moved from classical playing to blues and jazz. From Amin Toofani to John Mayer and Jimmi Hendrix. </p>
+        </div>
+        <div class="para2">
+            <h3> Guitars I Used</h3>
+            <p>I have two guitars. This one I bought in the beginning was a "HERTZ HZA 4010" that was a descent acoustic guitar. I'll drop the link too if you interested in buying your first guitar. <a  id="a1" href="https://www.amazon.in/Hertz-4010-Aoustic-Guitar-Natural/dp/B077MDJXLZ/ref=sr_1_3?adgrpid=67447446868&ext_vrnc=hi&gclid=CjwKCAiAm7OMBhAQEiwArvGi3NuhcdLdM5frrEftmYGNo9fLh6Q-zDSouK056XznVG04aPCuMK00WBoC0cIQAvD_BwE&hvadid=294114791184&hvdev=c&hvlocphy=9298247&hvnetw=g&hvqmt=e&hvrand=11903601052152235775&hvtargid=kwd-320523811614&hydadcr=27671_1782689&keywords=hertz+guitar&qid=1636627649&qsid=258-2866787-0511501&sr=8-3&sres=B077MDJXLZ%2CB078VS26SV%2CB07Q22J67Y%2CB077M6T58R%2CB01M8IFEXG%2CB01MG5DM90%2CB07KSC4YLJ%2CB01MCTQMFB%2CB077MGTQJH%2CB07JLL9RXF%2CB07Q25MV15%2CB08FCJLTD2%2CB08D3NXVBT%2CB07MKKKGHL%2CB01M9H5C7V%2CB082Z38HWC%2CB082B9NX3Y%2CB08D3BHPQ6%2CB07JN8DZPG%2CB078JGSQD4&srpt=GUITARS" target="_blank" >Click Here!</a>
+            This is only i bought a new guitar , it's "Cort AD810". I think it's the best guitar under 11k. SO if you an intermediate/advance player i'll recommend you to invest for this. It's action is amazing , sounds soo warm and clean. I'll drop the link below. <a id="a2" href="https://www.amazon.in/Cort-AD810-Dreadnought-Acoustic-Guitar/dp/B07KMBVR6V/ref=sr_1_1_sspa?crid=1AHRKMA56X17C&keywords=cort%2Bad810&qid=1636628648&sprefix=cort%2Ba%2Caps%2C326&sr=8-1-spons&smid=A2E0IZ06LXDJ9X&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzR09KNFc0S0lBWjBTJmVuY3J5cHRlZElkPUEwODg5MDcxM005N0dJVEdRT0dDWiZlbmNyeXB0ZWRBZElkPUEwODc5MDAyMlk1VEtMN0dPRk1CVSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1" target="_blank">Click Here!</a> </p>
+        </div>
+    </div>    
+</body>
+
+</html>
